@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Угадай число</title>
+</head>
+
+<body>
+    <div class="game__container">
+        <div class="titles__container">
+            <p class="game__title title">Угадай число</p>
+
+            <div class="counter__container">
+                <p class="counter__title__text game__text">Счетчик попыток:</p>
+                <p class="game__text counter__text">0</p>
+            </div>
+        </div>
+
+        <div class="game__input-form__container">
+            <input id="game__input-form" class="input-text" type="text" placeholder="Введите число">
+            <label for="game__input-form" class="input-form__text input-form__text__less">Загаданное число
+                меньше</label>
+            <label for="game__input-form" class="input-form__text input-form__text__more">Загаданное число
+                больше</label>
+        </div>
+
+        <button class="game__button button">Угадать</button>
+    </div>
+
+    <div class="start-tab__bg bg">
+        <div class="start-tab__container tab__container">
+            <p class="start-tab__title title">Введите диапазон</p>
+
+            <div class="start-tab__input-form__container">
+                <input id="start-tab_min" class="start-tab__input-form input-text" type="text" placeholder="min">
+                <input id="start-tab_max" class="start-tab__input-form input-text" type="text" placeholder="max">
+            </div>
+
+            <button class="start-tab__button button">Начать игру</button>
+        </div>
+    </div>
+
+    <div class="final-tab__bg bg">
+        <div class="final-tab__container tab__container">
+            <p class="final-tab__title title">Итоги</p>
+
+            <div class="final-tab__text__container">
+                <p class="final-tab__text">Число</p>
+                <p class="final-tab__num final-tab__text"></p>
+                <p class="final-tab__text">было угадано за</p>
+                <p class="final-tab__attempt-count final-tab__text"></p>
+                <p class="final-tab__text">попыток</p>
+            </div>
+
+            <button class="final-tab__button button">Новая игра</button>
+        </div>
+    </div>
+
+    <div class="pop-up__container pop-up__incorrect__container">
+        <p class="pop-up__text">Введите корректный диапазон</p>
+    </div>
+
+    <div class="pop-up__container pop-up__help__container">
+        <p class="pop-up__text">Загаданное число</p>
+        <p class="pop-up__text pop-up__text__parity"></p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>

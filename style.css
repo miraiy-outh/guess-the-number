@@ -1,0 +1,136 @@
+:root {
+    --bg-color: #EEF0F2;
+    --text-color: #443636;
+    --accent-color: #7FB069;
+    --accent-color2: #EF233C;
+    --text-accent: white;
+
+    --text-main-size: 24px;
+    --text-caption-size: 20px;
+    --text-title1-size: 64px;
+    --text-title2-size: 48px;
+    --text-title3-size: 32px;
+
+    --padding-button: 16px 32px;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+body * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Consolas', 'Arial';
+    font-size: var(--text-main-size);
+    color: var(--text-color);
+    line-height: 1.5em;
+}
+
+.title {
+    font-size: var(--text-title2-size);
+    margin: 0;
+}
+
+.button {
+    padding: var(--padding-button);
+    background-color: var(--accent-color);
+    color: var(--text-accent);
+    border: 0 solid var(--border-color);
+    border-radius: 32px;
+}
+
+/*---game-container---*/
+.game__container {
+    margin-top: 64px;
+    gap: 48px;
+}
+
+.titles__container {
+    align-items: center;
+    gap: 16px;
+}
+
+.game__input-form__container {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 16px;
+}
+
+.game__title {
+    font-size: var(--text-title1-size);
+}
+
+.counter__container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.game__text {
+    font-size: var(--text-title3-size);
+    margin: 0;
+}
+
+.input-form__text {
+    color: var(--accent-color2);
+    padding-left: 8px;
+}
+
+.input-text {
+    padding: 16px;
+    border: 1px solid var(--text-color);
+    border-radius: 16px;
+    max-width: 100px;
+}
+
+#game__input-form {
+    max-width: 400px;
+}
+
+/*---start-tab-container---*/
+.tab__container {
+    gap: 48px;
+    padding: 64px;
+    background-color: var(--bg-color);
+    border: 0px solid black;
+    border-radius: 64px;
+}
+
+.start-tab__input-form__container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 400px;
+    gap: 32px;
+}
+
+/*---final-tab-container---*/
+.final-tab__text__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.final-tab__text__container * {
+    display: inline-block;
+}
+
+
+.pop-up__container {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+    background-color: white;
+    border: 0px solid black;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.pop-up__text {
+    margin: 0;
+}
