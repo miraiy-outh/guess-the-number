@@ -35,8 +35,8 @@
             <p class="start-tab__title title">Введите диапазон</p>
 
             <div class="start-tab__input-form__container">
-                <input id="start-tab_min" class="start-tab__input-form input-text" type="text" placeholder="min">
-                <input id="start-tab_max" class="start-tab__input-form input-text" type="text" placeholder="max">
+                <input id="start-tab__min" class="start-tab__input-form input-text" type="text" placeholder="min">
+                <input id="start-tab__max" class="start-tab__input-form input-text" type="text" placeholder="max">
             </div>
 
             <button class="start-tab__button button">Начать игру</button>
@@ -64,8 +64,19 @@
     </div>
 
     <div class="pop-up__container pop-up__help__container">
-        <p class="pop-up__text">Загаданное число</p>
+        <p class="pop-up__text">Загаданное число&nbsp;</p>
         <p class="pop-up__text pop-up__text__parity"></p>
+    </div>
+
+    <div class="pop-up__container pop-up__game__incorrect__container">
+        <p class="pop-up__text">Введите корректное число</p>
+    </div>
+
+    <div class="pop-up__container pop-up__range__incorrect__container">
+        <p class="pop-up__text">Введите чиcло из диапазона&nbsp;</p>
+        <p class="pop-up__text pop-up__text__range__less"></p>
+        <p class="pop-up__text">-</p>
+        <p class="pop-up__text pop-up__text__range__more"></p>
     </div>
 
     <script src="game.js"></script>
